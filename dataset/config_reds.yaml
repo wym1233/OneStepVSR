@@ -1,0 +1,47 @@
+dataset:
+  train:
+    dataroot_gt: /data/wym123/VSRdataset/REDS/train/train_sharp/ # path to GT (e.g., 000, 001, 002 ... )
+    dataroot_lq: /data/wym123/VSRdataset/REDS/train/train_sharp_bicubic/X4/ # path to bicubic (e.g., 000, 001, 002 ... )
+    meta_info_file: /code/dataset/REDS_train_metadata.txt
+    io_backend:
+      type: disk
+    num_frame: 4
+    interval_list: [1]
+    random_reverse: False
+    crop: True
+    gt_size: 256
+    use_hflip: False
+    use_rot: False
+    scale: 4
+    remove_partition: True
+    val_partition: 'REDS4'
+  value:
+    dataroot_gt: /data/wym123/VSRdataset/REDS/val/val_sharp/
+    dataroot_lq: /data/wym123/VSRdataset/REDS/val/val_sharp_bicubic/X4/ 
+    meta_info_file: /code/dataset/REDS_value_metadata.txt
+    io_backend:
+      type: disk
+    num_frame: 4
+    interval_list: [1]
+    random_reverse: False
+    crop: True
+    gt_size: 720
+    use_hflip: False
+    use_rot: False
+    scale: 4
+    remove_partition: False
+  test:
+    dataroot_gt: /data/wym123/VSRdataset/REDS/REDS4/train_sharp
+    dataroot_lq: /data/wym123/VSRdataset/REDS/REDS4/train_sharp_bicubic/X4
+    meta_info_file: /code/dataset/REDS_test_metadata.txt
+    io_backend:
+      type: disk
+    num_frame: 4
+    interval_list: [1]
+    random_reverse: False
+    crop: True
+    gt_size: 720
+    use_hflip: False
+    use_rot: False
+    scale: 4
+    remove_partition: False
