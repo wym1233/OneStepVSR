@@ -48,7 +48,7 @@ python /src/train.py
 
 # Inference
 python /src/inference_onestepvsr.py
-d
+
 # Evaluation
 python /src/eval.py
 ```
