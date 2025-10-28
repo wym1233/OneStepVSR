@@ -60,7 +60,7 @@ We use REDS/Vimeo benchmarks for training and REDS/UDM10/Vimeo benchmarks for in
 | Dataset                                                    | Usage                         |
 | ---------------------------------------------------------- | ----------------------------- |
 | [REDS](https://seungjunnah.github.io/Datasets/reds.html)   | Train / Test (REDS4 / REDS30) |
-| [UDM10]([https://github.com/psychopa4/Detail-revealing-VSR](https://mmagic.readthedocs.io/en/latest/dataset_zoo/udm10.html)) | Test only                     |
+| [UDM10](https://mmagic.readthedocs.io/en/latest/dataset_zoo/udm10.html) | Test only                     |
 | [Vimeo-90K](http://toflow.csail.mit.edu/)                  | Train / Test                  |
 
 
